@@ -4,7 +4,7 @@
 #
 Name     : R-data.table
 Version  : 1.10.4.3
-Release  : 4
+Release  : 5
 URL      : https://cran.r-project.org/src/contrib/data.table_1.10.4-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/data.table_1.10.4-3.tar.gz
 Summary  : Extension of `data.frame`
@@ -13,8 +13,10 @@ License  : GPL-3.0
 Requires: R-data.table-lib
 Requires: R-evaluate
 Requires: R-markdown
+Requires: R-stringi
 BuildRequires : R-evaluate
 BuildRequires : R-markdown
+BuildRequires : R-stringi
 BuildRequires : clr-R-helpers
 
 %description
@@ -36,11 +38,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1521189224
+export SOURCE_DATE_EPOCH=1523297774
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1521189224
+export SOURCE_DATE_EPOCH=1523297774
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
