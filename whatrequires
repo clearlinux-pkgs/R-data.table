@@ -41,7 +41,6 @@ R-ddalpha
 R-dendextend
 R-drc
 R-dtw
-R-dygraphs
 R-dynlm
 R-fitdistrplus
 R-flexmix
@@ -56,8 +55,6 @@ R-gmp
 R-gplots
 R-gridExtra
 R-gtools
-R-htmlTable
-R-htmlwidgets
 R-inum
 R-ipred
 R-klaR
@@ -73,7 +70,6 @@ R-manipulateWidget
 R-maxLik
 R-memisc
 R-mi
-R-miniUI
 R-modelr
 R-multcomp
 R-multiwayvcov
@@ -91,10 +87,8 @@ R-quantreg
 R-questionr
 R-rasterVis
 R-recipes
-R-reprex
 R-rgl
 R-rio
-R-rmarkdown
 R-rms
 R-robCompositions
 R-robustbase
@@ -106,10 +100,7 @@ R-sandwich
 R-sem
 R-seriation
 R-sfsmisc
-R-shiny
-R-shinyjs
 R-shinystan
-R-shinythemes
 R-sna
 R-spdep
 R-strucchange
@@ -121,6 +112,3 @@ R-treatSens
 R-vcd
 R-vegan
 R-viridis
-R-visNetwork
-R-webshot
-apache-spark
