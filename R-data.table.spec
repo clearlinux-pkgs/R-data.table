@@ -11,8 +11,9 @@ Summary  : Fast aggregation of large data (e.g. 100GB in RAM), fast ordered join
 Group    : Development/Tools
 License  : MPL-2.0 MPL-2.0-no-copyleft-exception
 Requires: R-data.table-lib = %{version}-%{release}
-Requires: R-bit64
+Requires: R-markdown
 BuildRequires : R-bit64
+BuildRequires : R-markdown
 BuildRequires : buildreq-R
 
 %description
@@ -34,10 +35,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1547396065
+export SOURCE_DATE_EPOCH=1552734038
 
 %install
-export SOURCE_DATE_EPOCH=1547396065
+export SOURCE_DATE_EPOCH=1552734038
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -73,8 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library data.table|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  data.table || :
 
 
 %files
@@ -124,7 +124,6 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/data.table/help/paths.rds
 /usr/lib64/R/library/data.table/html/00Index.html
 /usr/lib64/R/library/data.table/html/R.css
-/usr/lib64/R/library/data.table/libs/symbols.rds
 /usr/lib64/R/library/data.table/tests/1206FUT.txt
 /usr/lib64/R/library/data.table/tests/1680-fread-header-encoding.csv
 /usr/lib64/R/library/data.table/tests/2008head.csv
@@ -136,6 +135,8 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/data.table/tests/SA2-by-DJZ.csv
 /usr/lib64/R/library/data.table/tests/allchar.csv.gz
 /usr/lib64/R/library/data.table/tests/alluniquechar.csv
+/usr/lib64/R/library/data.table/tests/autoprint.R
+/usr/lib64/R/library/data.table/tests/autoprint.Rout.save
 /usr/lib64/R/library/data.table/tests/bad.txt
 /usr/lib64/R/library/data.table/tests/benchmark.Rraw
 /usr/lib64/R/library/data.table/tests/ch11b.dat
@@ -146,6 +147,7 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/data.table/tests/fread_blank2.txt
 /usr/lib64/R/library/data.table/tests/fread_blank3.txt
 /usr/lib64/R/library/data.table/tests/fread_line_error.csv
+/usr/lib64/R/library/data.table/tests/froll.R
 /usr/lib64/R/library/data.table/tests/gb18030.txt
 /usr/lib64/R/library/data.table/tests/genotypes_genome.txt
 /usr/lib64/R/library/data.table/tests/grr.csv.gz
@@ -166,6 +168,11 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/data.table/tests/issue_773_fread.txt
 /usr/lib64/R/library/data.table/tests/issue_785_fread.txt
 /usr/lib64/R/library/data.table/tests/iterations.txt
+/usr/lib64/R/library/data.table/tests/knitr.R
+/usr/lib64/R/library/data.table/tests/knitr.Rmd
+/usr/lib64/R/library/data.table/tests/knitr.Rout.mock
+/usr/lib64/R/library/data.table/tests/knitr.Rout.save
+/usr/lib64/R/library/data.table/tests/main.R
 /usr/lib64/R/library/data.table/tests/melt-warning-1752.tsv
 /usr/lib64/R/library/data.table/tests/onecol4096.csv
 /usr/lib64/R/library/data.table/tests/other.Rraw
