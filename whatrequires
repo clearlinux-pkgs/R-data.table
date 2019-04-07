@@ -1,10 +1,13 @@
 # This file contains recursive sources that require this package
 R-BatchJobs
 R-Hmisc
+R-Luminescence
 R-ModelMetrics
+R-SGP
 R-SGPdata
 R-VIM
 R-bold
+R-caret
 R-csvy
 R-etm
 R-mvoutlier
@@ -14,5 +17,7 @@ R-pxweb
 R-randomNames
 R-rio
 R-ritis
+R-robCompositions
+R-taxize
 R-wikitaxa
 R-worrms
