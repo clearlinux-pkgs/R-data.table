@@ -4,17 +4,18 @@
 #
 Name     : R-data.table
 Version  : 1.12.6
-Release  : 30
+Release  : 31
 URL      : https://cran.r-project.org/src/contrib/data.table_1.12.6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/data.table_1.12.6.tar.gz
-Summary  : Extension of `data.frame`
+Summary  : Fast aggregation of large data (e.g. 100GB in RAM), fast ordered joins, fast add/modify/delete of columns by group using no copies at all, list columns and a fast file reader (fread). Offers a natural and flexible syntax, for faster development.
 Group    : Development/Tools
 License  : MPL-2.0 MPL-2.0-no-copyleft-exception
 Requires: R-data.table-lib = %{version}-%{release}
-Requires: R-bit64
 BuildRequires : R-bit64
+BuildRequires : R-markdown
 BuildRequires : buildreq-R
 BuildRequires : pkgconfig(zlib)
+BuildRequires : util-linux
 BuildRequires : zlib-dev
 
 %description
@@ -36,10 +37,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571462762
+export SOURCE_DATE_EPOCH=1571815382
 
 %install
-export SOURCE_DATE_EPOCH=1571462762
+export SOURCE_DATE_EPOCH=1571815382
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
