@@ -1,6 +1,2 @@
 1.12.8
-R-bit64
-R-markdown
 pkgconfig(zlib)
-util-linux
-zlib-dev

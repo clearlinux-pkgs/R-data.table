@@ -4,17 +4,15 @@
 #
 Name     : R-data.table
 Version  : 1.12.8
-Release  : 35
+Release  : 36
 URL      : https://cran.r-project.org/src/contrib/data.table_1.12.8.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/data.table_1.12.8.tar.gz
-Summary  : Extension of data.frame
+Summary  : Extension of `data.frame`
 Group    : Development/Tools
 License  : MPL-2.0 MPL-2.0-no-copyleft-exception
 Requires: R-data.table-lib = %{version}-%{release}
-Requires: R-bit64
-BuildRequires : R-bit64
 BuildRequires : buildreq-R
-BuildRequires : zlib-dev
+BuildRequires : pkgconfig(zlib)
 
 %description
 No detailed description available
@@ -29,21 +27,22 @@ lib components for the R-data.table package.
 
 %prep
 %setup -q -c -n data.table
+cd %{_builddir}/data.table
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1575998786
+export SOURCE_DATE_EPOCH=1589582095
 
 %install
-export SOURCE_DATE_EPOCH=1575998786
+export SOURCE_DATE_EPOCH=1589582095
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
