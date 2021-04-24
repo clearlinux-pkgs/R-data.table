@@ -4,7 +4,7 @@
 #
 Name     : R-data.table
 Version  : 1.14.0
-Release  : 44
+Release  : 45
 URL      : https://cran.r-project.org/src/contrib/data.table_1.14.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/data.table_1.14.0.tar.gz
 Summary  : Extension of `data.frame`
