@@ -1,5 +1,6 @@
 # This file contains recursive sources that require this package
 R-BatchJobs
+R-DescTools
 R-Hmisc
 R-Luminescence
 R-ModelMetrics
@@ -7,6 +8,7 @@ R-SGP
 R-SGPdata
 R-VIM
 R-bold
+R-checkmate
 R-csvy
 R-dtplyr
 R-etm
@@ -19,5 +21,6 @@ R-rio
 R-ritis
 R-robCompositions
 R-taxize
+R-tidyr
 R-wikitaxa
 R-worrms
