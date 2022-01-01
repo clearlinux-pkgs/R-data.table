@@ -7,12 +7,14 @@ R-ModelMetrics
 R-SGP
 R-SGPdata
 R-VIM
+R-batchtools
 R-bold
 R-checkmate
 R-csvy
 R-dtplyr
 R-etm
 R-memisc
+R-mlr
 R-mstate
 R-plotly
 R-pxweb
@@ -24,3 +26,4 @@ R-taxize
 R-tidyr
 R-wikitaxa
 R-worrms
+R-xgboost
