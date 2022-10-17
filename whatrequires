@@ -1,4 +1,5 @@
 # This file contains recursive sources that require this package
+R-BBmisc
 R-BatchJobs
 R-DescTools
 R-Hmisc
@@ -13,6 +14,9 @@ R-checkmate
 R-csvy
 R-dtplyr
 R-etm
+R-fixest
+R-flextable
+R-fst
 R-memisc
 R-mlr
 R-mstate
