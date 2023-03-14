@@ -4,7 +4,7 @@
 #
 Name     : R-data.table
 Version  : 1.14.8
-Release  : 63
+Release  : 64
 URL      : https://cran.r-project.org/src/contrib/data.table_1.14.8.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/data.table_1.14.8.tar.gz
 Summary  : Extension of `data.frame`
@@ -13,9 +13,6 @@ License  : MPL-2.0 MPL-2.0-no-copyleft-exception
 Requires: R-data.table-lib = %{version}-%{release}
 Requires: R-data.table-license = %{version}-%{release}
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 # data.table <a href="https://r-datatable.com"><img src="https://raw.githubusercontent.com/Rdatatable/data.table/master/.graphics/logo.png" align="right" height="140" /></a>
@@ -46,10 +43,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1676656822
+export SOURCE_DATE_EPOCH=1678814379
 
 %install
-export SOURCE_DATE_EPOCH=1676656822
+export SOURCE_DATE_EPOCH=1678814379
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/R-data.table
 cp %{_builddir}/data.table/LICENSE %{buildroot}/usr/share/package-licenses/R-data.table/9744cedce099f727b327cd9913a1fdc58a7f5599 || :
