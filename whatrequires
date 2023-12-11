@@ -11,6 +11,7 @@ R-VIM
 R-batchtools
 R-bold
 R-checkmate
+R-collapse
 R-csvy
 R-dtplyr
 R-etm
@@ -21,6 +22,7 @@ R-memisc
 R-mlr
 R-mstate
 R-plotly
+R-prodlim
 R-pxweb
 R-randomNames
 R-rio
