@@ -10,8 +10,6 @@ R-SGPdata
 R-VIM
 R-batchtools
 R-bold
-R-checkmate
-R-collapse
 R-csvy
 R-dtplyr
 R-etm
@@ -28,7 +26,10 @@ R-randomNames
 R-rio
 R-ritis
 R-robCompositions
+R-survMisc
 R-taxize
+R-tidyrules
+R-tidytable
 R-wikitaxa
 R-worrms
 R-xgboost
