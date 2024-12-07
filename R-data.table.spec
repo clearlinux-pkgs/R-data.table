@@ -6,10 +6,10 @@
 # autospec commit: 5424026
 #
 Name     : R-data.table
-Version  : 1.16.2
-Release  : 76
-URL      : https://ftp.osuosl.org/pub/cran/src/contrib/data.table_1.16.2.tar.gz
-Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/data.table_1.16.2.tar.gz
+Version  : 1.16.4
+Release  : 77
+URL      : https://ftp.osuosl.org/pub/cran/src/contrib/data.table_1.16.4.tar.gz
+Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/data.table_1.16.4.tar.gz
 Summary  : Extension of `data.frame`
 Group    : Development/Tools
 License  : MPL-2.0 MPL-2.0-no-copyleft-exception
@@ -65,10 +65,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1731638798
+export SOURCE_DATE_EPOCH=1733580128
 
 %install
-export SOURCE_DATE_EPOCH=1731638798
+export SOURCE_DATE_EPOCH=1733580128
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/R-data.table
 cp %{_builddir}/data.table/LICENSE %{buildroot}/usr/share/package-licenses/R-data.table/9744cedce099f727b327cd9913a1fdc58a7f5599 || :
