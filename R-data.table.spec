@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : R-data.table
-Version  : 1.16.4
-Release  : 78
-URL      : https://ftp.osuosl.org/pub/cran/src/contrib/data.table_1.16.4.tar.gz
-Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/data.table_1.16.4.tar.gz
+Version  : 1.17.0
+Release  : 79
+URL      : https://ftp.osuosl.org/pub/cran/src/contrib/data.table_1.17.0.tar.gz
+Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/data.table_1.17.0.tar.gz
 Summary  : Extension of `data.frame`
 Group    : Development/Tools
 License  : MPL-2.0 MPL-2.0-no-copyleft-exception
@@ -65,10 +65,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1740090525
+export SOURCE_DATE_EPOCH=1740413429
 
 %install
-export SOURCE_DATE_EPOCH=1740090525
+export SOURCE_DATE_EPOCH=1740413429
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/R-data.table
 cp %{_builddir}/data.table/LICENSE %{buildroot}/usr/share/package-licenses/R-data.table/9744cedce099f727b327cd9913a1fdc58a7f5599 || :
@@ -143,6 +143,9 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/data.table/doc/datatable-intro.R
 /usr/lib64/R/library/data.table/doc/datatable-intro.Rmd
 /usr/lib64/R/library/data.table/doc/datatable-intro.html
+/usr/lib64/R/library/data.table/doc/datatable-joins.R
+/usr/lib64/R/library/data.table/doc/datatable-joins.Rmd
+/usr/lib64/R/library/data.table/doc/datatable-joins.html
 /usr/lib64/R/library/data.table/doc/datatable-keys-fast-subset.R
 /usr/lib64/R/library/data.table/doc/datatable-keys-fast-subset.Rmd
 /usr/lib64/R/library/data.table/doc/datatable-keys-fast-subset.html
@@ -173,8 +176,12 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/data.table/po/en@quot/LC_MESSAGES/data.table.mo
 /usr/lib64/R/library/data.table/po/es/LC_MESSAGES/R-data.table.mo
 /usr/lib64/R/library/data.table/po/es/LC_MESSAGES/data.table.mo
+/usr/lib64/R/library/data.table/po/fr/LC_MESSAGES/R-data.table.mo
+/usr/lib64/R/library/data.table/po/fr/LC_MESSAGES/data.table.mo
 /usr/lib64/R/library/data.table/po/pt_BR/LC_MESSAGES/R-data.table.mo
 /usr/lib64/R/library/data.table/po/pt_BR/LC_MESSAGES/data.table.mo
+/usr/lib64/R/library/data.table/po/ru/LC_MESSAGES/R-data.table.mo
+/usr/lib64/R/library/data.table/po/ru/LC_MESSAGES/data.table.mo
 /usr/lib64/R/library/data.table/po/zh_CN/LC_MESSAGES/R-data.table.mo
 /usr/lib64/R/library/data.table/po/zh_CN/LC_MESSAGES/data.table.mo
 /usr/lib64/R/library/data.table/tests/1206FUT.txt.bz2
@@ -235,6 +242,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/data.table/tests/issue_2157_sampling_reached_eof_early.txt.bz2
 /usr/lib64/R/library/data.table/tests/issue_3400_fread.txt
 /usr/lib64/R/library/data.table/tests/issue_563_fread.txt
+/usr/lib64/R/library/data.table/tests/issue_6729.txt.bz2
 /usr/lib64/R/library/data.table/tests/issue_773_fread.txt
 /usr/lib64/R/library/data.table/tests/issue_785_fread.txt.gz
 /usr/lib64/R/library/data.table/tests/iterations.txt.bz2
